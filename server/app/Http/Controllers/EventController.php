@@ -12,7 +12,7 @@ class EventController extends Controller
     // Show the form to create an event
     public function create()
     {
-        return view('events.create');
+        return view('eventcreate');
     }
 
     // Handle form submission to create an event
