@@ -1,22 +1,22 @@
+@extends('layout')
 
 
+<div class="flex justify-center pt-20">
 
-
-  
-
-<form class="flex flex-col items-center justify-center  bg-gray-100"  method="POST">
+<form action="{{route('eventstore') }}" class="flex flex-col items-center justify-center  font-quick font-semibold p-2 border border-gray-200 shadow-lg shadow-gray-300 w-80 sm:w-[30rem] lg:w-[40rem] bg-gray-50 "  method="POST">
     @csrf
-    <label for="title">Event Title:</label>
-    <input type="text" id="title" name="title" required>
+    
+    <label class=" text-gray-500" for="title">Event Title</label>
+    <input class="w-3/4 rounded-md border border-gray-400 mb-4  shadow-inner font-medium text-sm ps-2" type="text" id="title" name="title" required>
 
-    <label for="description">Event Description:</label>
-    <textarea id="description" name="description" required></textarea>
+    <label class=" text-gray-500"  for="description">Event Description</label>
+    <textarea  class="w-3/4 rounded-md border border-gray-400  shadow-inner  mb-4 font-medium text-sm ps-2" id="description" name="description" required></textarea>
 
-    <label for="date">Event Date:</label>
-    <input type="date" id="date" name="date" required>
+    <label class=" text-gray-500" for="date">Event Date</label>
+    <input class="w-3/4 rounded-md border border-gray-400   shadow-inner   mb-4 ps-1 pe-1 text-gray-500 font-medium text-sm" type="date" id="date" name="date" required>
 
-    <button className="font-quick font-semibold border-2 border-gray-800 bg-gray-100 hover:bg-black hover:text-white  hover:shadow-custom-inner-sky-400  w-64 sm:w-96"  type="submit"> Create Event</button>
+    <button class=" rounded-md font-medium bg-black border-2 text-white hover:bg-white hover:text-black hover:border-black px-2 py-1"  type="submit"> Create Event</button>
     </form>
 
-
+    </div>
 

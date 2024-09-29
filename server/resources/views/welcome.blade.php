@@ -1,5 +1,4 @@
-@extends('layout')
-
+ 
 @section('title', 'Create Event')
 
 @section('welcome')
