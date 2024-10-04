@@ -1,36 +1,38 @@
- 
+@extends('layout')
+
 @section('title', 'Create Event')
 
 @section('welcome')
 
-<div class="flex flex-col items-center justify-center font-quick font-semibold pt-10 gap-4">
+<div class="flex flex-col items-center justify-center font-quick font-semibold mt-10 gap-10">
 
-     <p class="font-anta font-light text-2xl"> Welcome to Event Booking </p>
+     <p class="font-anta font-light text-xl sm:text-2xl"> Welcome to Event Booking </p>
 
-  <div class="flex items-center gap-2 "> 
+  <div class="flex items-center gap-2 text-md sm:text-lg"> 
         <p id="text-1"> Choose your Event </p>
 
         <a id="text-2" class="hover:underline hidden" href="{{route('eventcreate')}}"> Create New Event </a>
 
         <i id="toggle-icon" class="fas fa-repeat w-4 h-4 cursor-pointer" style="color: #000000;"></i>
-    </div>
+  </div>
+
 
      <div>
-          <section class=" flex bg-slate-100  shadow-lg px-6 py-4 sm:px-6 sm:py-6 rounded-md relative">
+          <section class=" flex items-center bg-slate-200 gap-1 sm:gap-2 shadow-lg py-4 sm:py-12 px-1  rounded-md ">
                
-               <button id="prev" class=" px-2 sm:py-2 sm:px-4 rounded-l-md shadow-md bg-slate-50">
+               <button id="prev" class=" bg-slate-300  p-2 rounded-full ">
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Previous" class="  w-4 h-4  sm:w-6 sm:h-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Previous" class="  w-2 h-2 sm:w-4 sm:h-4">
 
                </button>
 
-               <img id="slideshow" class="  w-64 sm:w-[30rem] lg:w-[40rem] object-fit " src="" alt="Event Image" />
+               <img id="slideshow" class="  w-72 sm:w-[30rem] lg:w-[40rem] object-fit rounded-lg " src="" alt="Event Image" />
 
 
 
-               <button id="next" class=" px-2 sm:py-2 sm:px-4 rounded-r-md shadow-md bg-slate-50">
+               <button id="next" class=" bg-slate-300  p-2 rounded-full ">
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Next" class= "w-4 h-4  sm:w-6 sm:h-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Next" class= " w-2 h-2 sm:w-4 sm:h-4">
                </button>
 
           </section>

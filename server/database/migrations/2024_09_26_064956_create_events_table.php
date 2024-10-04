@@ -15,8 +15,15 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->date('date');
+            $table->string('image_url');
             $table->timestamps();
 
         } );
     }
+
+    public function down()
+    {
+        Schema::dropIfExists('eventslist');
+    }
+    
 };

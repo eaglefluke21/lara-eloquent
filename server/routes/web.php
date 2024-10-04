@@ -11,3 +11,4 @@ Route::get('/', function () {
 Route::get('/events/create', [EventController::class, 'create'])->name('eventcreate');
 
 Route::post( '/eventstore',[EventController::class, 'store'])->name('eventstore');
+
